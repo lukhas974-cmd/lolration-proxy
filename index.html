@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProxyFlow | Fast private browsing</title>
+    <meta
+      name="description"
+      content="ProxyFlow gives users a clean, modern proxy landing page with privacy-focused design, fast routing, and a streamlined browsing experience."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar container">
+        <div class="brand" aria-label="ProxyFlow logo">
+          <span class="brand-mark">P</span>
+          <span>ProxyFlow</span>
+        </div>
+
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <button class="ghost-button">Log in</button>
+      </header>
+
+      <main>
+        <section class="hero container">
+          <div class="hero-copy">
+            <span class="eyebrow">Secure web access</span>
+            <h1>Browse the web faster with a private proxy experience.</h1>
+            <p>
+              ProxyFlow helps users access websites through a streamlined, privacy-conscious
+              gateway designed for speed, simplicity, and a polished modern UI.
+            </p>
+
+            <div class="cta-row">
+              <button class="primary-button">Start free</button>
+              <button class="secondary-button">View demo</button>
+            </div>
+
+            <div class="trust-row" aria-label="Trust statistics">
+              <div>
+                <strong>1.4M+</strong>
+                <span>requests/day</span>
+              </div>
+              <div>
+                <strong>99.9%</strong>
+                <span>uptime</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>support</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proxy-panel" aria-label="Proxy access form">
+            <div class="panel-header">
+              <span class="dot green"></span>
+              <span class="dot yellow"></span>
+              <span class="dot red"></span>
+            </div>
+
+            <form id="proxyForm" class="proxy-form">
+              <label for="proxyUrl">Website URL</label>
+              <div class="input-wrap">
+                <input
+                  id="proxyUrl"
+                  name="proxyUrl"
+                  type="url"
+                  placeholder="https://example.com"
+                  required
+                />
+              </div>
+
+              <div class="field-row">
+                <div>
+                  <label for="proxyType">Connection</label>
+                  <select id="proxyType" name="proxyType">
+                    <option>HTTP</option>
+                    <option>HTTPS</option>
+                    <option>SOCKS5</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="region">Region</label>
+                  <select id="region" name="region">
+                    <option>Global</option>
+                    <option>NA</option>
+                    <option>EU</option>
+                    <option>APAC</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="primary-button full-width">Connect proxy</button>
+              <p id="formMessage" class="form-message" aria-live="polite">
+                Demo mode: this page is a front-end concept for a proxy service.
+              </p>
+            </form>
+          </div>
+        </section>
+
+        <section id="features" class="features container">
+          <div class="section-heading">
+            <span class="eyebrow">Why ProxyFlow</span>
+            <h2>Built for performance and peace of mind.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon-wrap">⚡</div>
+              <h3>Fast routing</h3>
+              <p>Optimized connection paths keep page loads quick and stable.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">🔒</div>
+              <h3>Privacy-first</h3>
+              <p>Simple, clear privacy controls designed for secure browsing habits.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">🌍</div>
+              <h3>Global access</h3>
+              <p>Flexible routing options help users connect from multiple regions.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon-wrap">🧩</div>
+              <h3>Developer-ready</h3>
+              <p>Clean APIs and configuration options built for integration workflows.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="how-it-works" class="steps container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">How it works</span>
+            <h2>Simple flow. Secure layers.</h2>
+          </div>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span>01</span>
+              <h3>Enter a URL</h3>
+              <p>Paste a website address into the access form.</p>
+            </div>
+
+            <div class="step-card">
+              <span>02</span>
+              <h3>Choose a route</h3>
+              <p>Select protocol, region, and connection preferences.</p>
+            </div>
+
+            <div class="step-card">
+              <span>03</span>
+              <h3>Browse securely</h3>
+              <p>Start a clean browsing session through a modern proxy interface.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="stats-band">
+          <div class="container stats-row">
+            <div>
+              <strong>12K</strong>
+              <span>active users</span>
+            </div>
+            <div>
+              <strong>320ms</strong>
+              <span>avg. response</span>
+            </div>
+            <div>
+              <strong>88+</strong>
+              <span>countries</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>monitoring</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq container">
+          <div class="section-heading narrow">
+            <span class="eyebrow">FAQ</span>
+            <h2>Common questions.</h2>
+          </div>
+
+          <div class="faq-list">
+            <details open>
+              <summary>Is this a real proxy service?</summary>
+              <p>This project is a front-end concept and demo landing page for a proxy brand.</p>
+            </details>
+
+            <details>
+              <summary>Can I customize the design?</summary>
+              <p>Yes. You can edit the HTML, CSS, and JavaScript in this repository to match your brand.</p>
+            </details>
+
+            <details>
+              <summary>Does it work without a backend?</summary>
+              <p>As designed, the page is a front-end mockup. A backend would be needed for real traffic routing.</p>
+            </details>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer container">
+        <div class="brand" aria-label="ProxyFlow footer logo">
+          <span class="brand-mark">P</span>
+          <span>ProxyFlow</span>
+        </div>
+        <p>© 2026 ProxyFlow</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
